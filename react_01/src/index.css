@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+      @apply py-2 px-4 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+    }
+  }
+summary {
+    list-style: none;
+  } 
+summary::after{
+    content: " ...";
+}
+
+.dot1{
+    animation: Loading 500ms alternate-reverse infinite;
+}
+.dot2{
+    animation: Loading 600ms alternate-reverse infinite;
+}
+.dot3{
+    animation: Loading 700ms alternate-reverse infinite;
+}
+@keyframes Loading {
+    0%{
+        margin-bottom: 0px;
+      
+    }
+    25%{
+        margin-bottom: 50px;
+        
+    }
+    50%{
+        margin-bottom: 75px;
+       
+    }
+    75%{
+        margin-bottom: 100px;
+        
+    }
+    100%{
+        margin-bottom: 125px;
+        
+    }
+    
+
+}
